@@ -2,3 +2,5 @@
 src/include
 impl.js.txt
 /build/
+.idea
+.gitignore
