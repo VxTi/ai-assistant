@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="styling/register.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('submit-api-key')
+                .addEventListener('click', () => {
+                    let input = document.getElementById('api-key').value;
+                    if ( input.length === 0 ) {
+                        return;
+                    }
+
+                    localStorage.setItem('openai-key', input);
+                    window.location.href = 'index.html';
+                })
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h2>Please validate OpenAI key</h2>
+        <input type="text" class="inputbox" id="api-key" placeholder="OpenAI API Key">
+        <button class="submit-button" id="submit-api-key">Validate</button>
+    </div>
+
+</body>
+</html>

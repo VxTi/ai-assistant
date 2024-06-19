@@ -1,0 +1,2 @@
+- Add article search functionality (Sort by relevance)
+- Plotting math equations with pictures
